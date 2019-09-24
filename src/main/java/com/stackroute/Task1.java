@@ -8,6 +8,5 @@ public class Task1 {
     public static void main(String[] args) {
         AbstractApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         context.registerShutdownHook();
-
     }
 }

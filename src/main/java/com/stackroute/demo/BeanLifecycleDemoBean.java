@@ -14,7 +14,6 @@ public class BeanLifecycleDemoBean implements InitializingBean, DisposableBean {
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("After property set");
-        System.out.println("Initializing Bean");
     }
 
     @Override
