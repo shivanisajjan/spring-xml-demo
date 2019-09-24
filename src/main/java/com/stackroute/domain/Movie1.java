@@ -21,6 +21,9 @@ public class Movie1 implements BeanFactoryAware, BeanNameAware {
         return this.actor;
     }
 
+    public Actor getactor1() {
+        return context.getBean("actor", Actor.class);
+    }
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
         this.context=beanFactory;

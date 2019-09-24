@@ -21,6 +21,9 @@ public class Movie implements ApplicationContextAware , BeanNameAware {
         return this.actor;
     }
 
+    public Actor getactor() {
+        return context.getBean("actor", Actor.class);
+    }
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.context=applicationContext;
