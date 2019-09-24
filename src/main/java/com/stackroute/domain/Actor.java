@@ -5,9 +5,15 @@ public class Actor {
     Integer age;
     String gender;
 
-    public Actor(String name, Integer age, String gender) {
+    public void setName(String name) {
         this.name = name;
+    }
+
+    public void setAge(Integer age) {
         this.age = age;
+    }
+
+    public void setGender(String gender) {
         this.gender = gender;
     }
     public void display(){
