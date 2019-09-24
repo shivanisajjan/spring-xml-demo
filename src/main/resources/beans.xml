@@ -3,11 +3,5 @@
            xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-    <bean id="movie1" class="com.stackroute.domain.Movie" autowire="byName"/>
-    <bean id="movie2" class="com.stackroute.domain.Movie1" autowire="byName"/>
-    <bean id="actor" class="com.stackroute.domain.Actor">
-        <constructor-arg name="name" value="Shivani"/>
-        <constructor-arg name="gender" value="Female"/>
-        <constructor-arg name="age" value="20"/>
-    </bean>
+<bean id="beanlifecycle" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy"/>
 </beans>

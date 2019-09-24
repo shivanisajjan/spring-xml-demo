@@ -28,6 +28,6 @@ public class Movie implements ApplicationContextAware , BeanNameAware {
 
     @Override
     public void setBeanName(String s) {
-        System.out.println("Bean name is: "+s+"(ApplicationContext)");
+        System.out.println("Bean name is: "+s+"(ApplicationContext,)");
     }
 }
