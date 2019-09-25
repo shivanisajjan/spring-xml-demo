@@ -7,6 +7,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Task1 {
     public static void main(String[] args) {
         AbstractApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        BeanLifecycleDemoBean bean=context.getBean("beanlifecycle",BeanLifecycleDemoBean.class);
+        bean.display();
         context.registerShutdownHook();
     }
 }

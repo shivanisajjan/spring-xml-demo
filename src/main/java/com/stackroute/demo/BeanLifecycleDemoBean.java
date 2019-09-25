@@ -10,7 +10,9 @@ public class BeanLifecycleDemoBean implements InitializingBean, DisposableBean {
         this.p = p;
         System.out.println("Properties set successfully");
     }
-
+    public void display(){
+        System.out.println(this.p+"Welcome to Stackroute");
+    }
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("After property set");
